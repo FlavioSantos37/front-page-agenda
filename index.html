@@ -1,61 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <section>
         <div class="topo">
-           <div class="dentista">
+            <div class="dentista">
                 <p>Dentista</p>
-           </div>
+            </div>
         </div>
 
         <div class="caixa1">
             <div class="apresentacao">
                 <div class="img1">
-                    <img src="./img/dentista.jpg" alt="">
+                    <img class="imgcaixa1" src="./img/dentista.jpg" alt="">
                 </div>
-                
-                  <div class="t2">
-                    <p class="texto">Dra. Ariana golçalves</p>
+
+                <div class="t2">
+                    <p class="texto">Dra. Renata Ramos</p>
                     <p class="t3">Dentista mais</p>
-                    <p class="t3">Sap Paulo</p>
+                    <p class="t3">São Paulo</p>
                     <p class="t3">Numero registro</p>
-                    
-                  </div>
-                  
-                  
+
+                </div>
+
+
             </div>
             <div class="btn">
-                <button class="env" type="text">Agendar Consulta</button>
-                <button class="env2" type="text">Enviar Mensagem</button>
-              </div>
-              <div class="menu">
+
+                <button class="env" type="text"><img class="agend" src="./img/dias-do-calendario.png">Agendar
+                    Consulta</button>
+
+                <button class="env2" type="text"><img class="en" src="./img/enviar.png">Enviar Mensagem</button>
+            </div>
+            <div class="menu">
                 <ul>
-                    <li>Novidade</li>
-                    <li>Experiencia</li>
-                    <li>Consultorios</li>
-                    <li>Serviços</li>
-                    
+                    <li><a href="#"> Novidade</a></li>
+                    <li><a href="#">Experiencia</a></li>
+                    <li><a href="#">Consultorios</a></li>
+                    <li><a href="#">Serviços</a></li>
+
                 </ul>
             </div>
 
             <div class="caixa2">
                 <div class="apresentacao2">
+                    <img class="imgt3" src="./img/dentista.jpg" alt="">
                     <div class="t3">
+                       
                         <p>Dra. Arieane Cristina</p>
-                        <P>Rua cerro cora 43,sao paulo</P>
-                        <p>0561050</p>
+                        <P>Rua cerro cora 43, Sâo Paulo</P>
+                        <p>Cep: 0561050</p><br>
+                        <p>CLIQUE em "Ler mais" para conferir todas as INFORMAÇÕES sobre meu atendimento:
+                            Você sente que chegou o momento de cuidar melhor do seu sorriso, mais ainda ......<br>
+                            <div onclick="openModal()">Ler mais</div> 
+                        </p>
+
+                        <div id="modal-container" class="modal-container">
+                            <div class="modal">
+                                <button class="fechar" id="fechar">X</button>
+                                <h1>Agradecemos pelo presente.</h1>
+                                <p>Dra. Arieane Cristina</p>
+                                <P>Rua cerro cora 43, Sâo Paulo</P>
+                                <p>Cep: 0561050</p><br>
+                                <p>CLIQUE em "Ler mais" para conferir todas as INFORMAÇÕES sobre meu atendimento:
+                                    Você sente que chegou o momento de cuidar melhor do seu sorriso, mais ainda ......<br></p>
+                                <img class="janela2" src="./janela2.png">
+                           
+                            </div>
+                        </div>
                     </div>
                 </div>
-        
+
             </div>
+
+            
         </div>
-        
+
     </section>
+    <script src="script.js"></script>
 </body>
+
 </html>
